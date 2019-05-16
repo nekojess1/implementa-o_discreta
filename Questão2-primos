@@ -1,0 +1,19 @@
+# QUESTÃO 4 DA FICHA
+
+def primo(n):
+    raiz=int(n**0.5)
+    primo=2
+    n_primo=0 #Verificação se é primo ou não
+    while primo <= raiz:
+        if n%primo==0:
+            n_primo+=1
+        primo+=1
+    if n_primo>0:
+        print('{} é composto.'.format(n))
+    elif n_primo==0:
+        print('{} é primo.'.format(n))
+n=int(input('Digite um número a ser testado como primo:\n'))
+primo(n)
+    
+
+
