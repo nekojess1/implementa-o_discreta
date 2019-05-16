@@ -1,0 +1,23 @@
+# QUESTÃO 6 DA FICHA
+
+def conjectura_de_collatz():
+    n=int(input('Informe um inteiro positivo:\n'))
+    x=0            # Contador de passos  
+    while n>1:
+        if n%2==0: # Caso seja divisível por 2, divide por 2
+            n=n/2
+            x+=1   # Adiciona mais um passo
+        else:      # Caso não seja divisível por 2, utiliza esse passo
+            n=3*n+1
+            x+=1   # Adiciona mais um passo 
+    if n==1:       
+        print('Obteve o número 1 em {} passos.'.format(x)) 
+    else:
+        print('Não obteve o número 1') # Caso a operação não tenha resultado 1
+
+
+conjectura_de_collatz() #Chama a função
+
+
+
+
