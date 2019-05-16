@@ -1,0 +1,16 @@
+
+# QUESTÃO 5 DA FICHA
+
+def mdc(a,b):
+    
+    if b == 0:          # Caso b seja zero, a função dará o resultado
+        return a        # Retornará o valor de a
+    resto = a%b         # Busca do resto entre a divisão de a e b
+    a,b = b,resto       # a e b assumem novos valores    
+
+    return mdc(a,b) # A função se inicia novamente com os novos valores
+
+a=int(input("Digite um valor para 'a':\n"))
+b=int(input("Digite um valor para 'b':\n"))
+print('O valor do MDC é {}'.format(mdc(a,b))) # Executa a função com  os valores descritos
+
